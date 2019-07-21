@@ -4,6 +4,15 @@
 
 A heroku buildpack for Meteor v1+, designed to be as simple and readable as possible.
 
+# Disclaimer
+This build pack is a direct copy of [AdmitHub's Build Pack](https://github.com/AdmitHub/meteor-buildpack-horse). This version was created
+to be able to add more custom build options. A list of the new custom options is stated below. Outside of these extended options, 
+this build pack is a direct copy of the original.
+
+## Extended Options
+1. Staging development. 
+    * If the DEV_STATE env variable is set to "DEVELOPMENT", this build pack will not make a production build.
+
 To use this with your meteor app and heroku:
 
 1. Set up your app to [deploy to heroku with git](https://devcenter.heroku.com/articles/git).
